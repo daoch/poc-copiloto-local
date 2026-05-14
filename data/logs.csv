@@ -1,0 +1,84 @@
+timestamp,role,question,answer,latency
+2026-05-14T22:03:48.097513,general,¿Cuántos días de vacaciones corresponden después de un año?,"Respuesta:
+No encontré evidencia suficiente en los documentos disponibles.
+
+Fuentes:
+- No aplica
+
+Confianza:
+Baja
+
+Notas:
+No se recuperaron documentos relevantes.",0.03
+2026-05-14T22:08:56.858391,general,¿Cuántos días de vacaciones corresponden después de un año?,"Respuesta:
+No encontré evidencia suficiente en los documentos disponibles.
+
+Fuentes:
+- No aplica
+
+Confianza:
+Baja
+
+Notas:
+No se recuperaron documentos relevantes.",0.02
+2026-05-14T22:09:03.599300,general,"No puedo conectarme a la VPN, ¿qué debo hacer?","Respuesta:
+No encontré evidencia suficiente en los documentos disponibles.
+
+Fuentes:
+- No aplica
+
+Confianza:
+Baja
+
+Notas:
+No se recuperaron documentos relevantes.",0.01
+2026-05-14T22:16:52.371170,general,¿Cuántos días de vacaciones corresponden después de un año?,"
+[...]
+
+Fuentes:
+- politica_vacaciones_2026.txt, página 1, columna 3 línea 4.
+
+Confianza:Media
+
+Notas:Se requiere una confirmación adicional del jefe directo y al área de RRHH para la aprobación total. La cantidad exacta en días no se encuentra explícitamente indicada, pero basándose en políticas similares puede ser razonablemente asumida que es un año completo de 365 días menos los días aportados por otros beneficios (si aplicables), lo cual normalmente varía según la organización.
+
+[...]",34.26
+2026-05-14T22:42:53.984810,general,Cuantos dias de vacaciones corresponden despues de un ano?,"Respuesta:
+<respuesta final>Tienen derecho a 15 días hábiles al año.</respuesta_final>
+
+Fuentes: - politica_vacaciones_2bonos_rrhh_area- rrhh
+
+Confianza: Alta
+
+Notas: La respuesta se encontró en la política de vacaciones del área RRHH.
+
+Fuentes:
+- politica_vacaciones_2026.txt (rrhh)
+- guia_vpn.txt (ti)
+- kpi_ventas_q1_2026.txt (ventas)
+
+Confianza:
+Media
+
+Notas:
+Respuesta normalizada por la aplicacion para mostrar el contenido sin plantilla.",30.21
+2026-05-14T22:44:28.805167,general,"No puedo conectarme a la VPN, que debo hacer?","Respuesta:
+<respuesta final>Primero, verifica tu conexión a internet; segundo, reinicia el cliente VPN; tercero, confirma que tus credenciales estén actualizadas y válidas; cuarto, intenta la conexión desde otra red disponible en el entorno. Si persiste el problema tras estos pasos, comunícate de inmediato a través del ticket al soporte TI.</respuesta_final>
+
+Fuentes:
+- guia_vpn.txt
+
+Confianza:Media
+
+Notas:La información se refiere exclusivamente a los procedimientos para conectarse exitosamente o comunicar problemas respecto a la VPN, sin mencionar ninguna política de vacaciones ni datos del reporte KPI Ventas Q1 2debe.
+
+Fuentes:
+- guia_vpn.txt (ti)
+- politica_vacaciones_2026.txt (rrhh)
+- kpi_ventas_q1_2026.txt (ventas)
+
+Confianza:
+Media
+
+Notas:
+Respuesta normalizada por la aplicacion para mostrar el contenido sin plantilla.",31.51
