@@ -1,0 +1,7 @@
+streamlit
+chromadb
+sentence-transformers
+pandas
+requests
+pypdf
+python-docx
