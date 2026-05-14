@@ -1,11 +1,11 @@
-Título: Guía de uso de VPN
-Área: TI
-Versión: 1.0
+Titulo: Guia de uso de VPN
+Area: TI
+Version: 1.0
 
 Si el usuario no puede conectarse a la VPN, debe seguir estos pasos:
 
-1. Verificar conexión a internet.
+1. Verificar conexion a internet.
 2. Reiniciar el cliente VPN.
-3. Confirmar que sus credenciales estén vigentes.
-4. Intentar conexión desde otra red.
-5. Si el problema continúa, crear ticket a soporte TI.
+3. Confirmar que sus credenciales esten vigentes.
+4. Intentar conexion desde otra red.
+5. Si el problema continua, crear ticket a soporte TI.

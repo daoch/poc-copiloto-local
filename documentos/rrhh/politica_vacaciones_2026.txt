@@ -1,10 +1,10 @@
-Título: Política de vacaciones 2026
-Área: RRHH
-Versión: 1.0
+Titulo: Politica de vacaciones 2026
+Area: RRHH
+Version: 1.0
 Vigencia: 2026-01-01
 
-Los colaboradores con más de un año de antigüedad tienen derecho a 15 días hábiles de vacaciones al año.
+Los colaboradores con mas de un ano de antiguedad tienen derecho a 15 dias habiles de vacaciones al ano.
 
-Las vacaciones deben solicitarse con al menos 15 días calendario de anticipación.
+Las vacaciones deben solicitarse con al menos 15 dias calendario de anticipacion.
 
-La aprobación corresponde al jefe directo y al área de RRHH.
+La aprobacion corresponde al jefe directo y al area de RRHH.

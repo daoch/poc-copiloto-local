@@ -1,4 +1,5 @@
 import os
+import re
 
 import chromadb
 import requests
@@ -25,40 +26,15 @@ SYSTEM_PROMPT = """
 Eres un copiloto empresarial interno para un POC local.
 
 Reglas:
-1. Responde unicamente usando el contexto entregado.
-2. No inventes informacion.
-3. Si el contexto no contiene la respuesta, responde exactamente: No encontre evidencia suficiente en los documentos disponibles.
-4. Siempre incluye las fuentes utilizadas.
-5. Responde en espanol claro y profesional.
-6. Si la respuesta no esta explicitamente en el contexto, no la infieras como hecho.
-7. No escribas corchetes de ejemplo como [...] ni texto de plantilla.
-
-Devuelve siempre este formato final, reemplazando cada seccion con contenido real:
-Respuesta:
-<respuesta final>
-
-Fuentes:
-- <fuente 1>
-
-Confianza:
-<Alta, Media o Baja>
-
-Notas:
-<observaciones breves>
+1. Responde solamente usando el contexto disponible.
+2. No inventes informacion ni hagas inferencias no explicitadas.
+3. Si el contexto no contiene la respuesta exacta, responde unicamente:
+No encontre evidencia suficiente en los documentos disponibles.
+4. No uses plantillas, corchetes, XML, markdown estructurado ni etiquetas.
+5. Devuelve solo el cuerpo de la respuesta final, en espanol claro y breve.
 """
 
-EMPTY_RESPONSE = """Respuesta:
-No encontre evidencia suficiente en los documentos disponibles.
-
-Fuentes:
-- No aplica
-
-Confianza:
-Baja
-
-Notas:
-No se recuperaron documentos relevantes o la coleccion todavia no fue indexada.
-""".strip()
+EMPTY_ANSWER = "No encontre evidencia suficiente en los documentos disponibles."
 
 
 def get_collection():
@@ -82,12 +58,21 @@ def search_documents(question: str, n_results: int = 4):
     if not results.get("documents") or not results["documents"][0]:
         return contexts
 
-    for document, metadata in zip(results["documents"][0], results["metadatas"][0]):
+    distances = results.get("distances") or [[]]
+
+    for index, (document, metadata) in enumerate(
+        zip(results["documents"][0], results["metadatas"][0])
+    ):
+        distance = None
+        if distances and distances[0] and index < len(distances[0]):
+            distance = distances[0][index]
+
         contexts.append(
             {
                 "text": document,
                 "file_name": metadata.get("file_name", "desconocido"),
                 "area": metadata.get("area", "desconocida"),
+                "distance": distance,
             }
         )
 
@@ -109,47 +94,109 @@ def ask_ollama(prompt: str):
     return response.json()["response"].strip()
 
 
-def normalize_answer(answer: str, contexts):
+def build_context_text(contexts):
+    return "\n\n".join(
+        [
+            f"Fuente: {item['file_name']}\nArea: {item['area']}\nContenido:\n{item['text']}"
+            for item in contexts
+        ]
+    )
+
+
+def clean_answer(answer: str):
     cleaned = answer.strip()
+    markers = [
+        "[...]",
+        "<respuesta final>",
+        "</respuesta final>",
+        "<respuesta_final>",
+        "</respuesta_final>",
+        "Respuesta:",
+        "Fuentes:",
+        "Confianza:",
+        "Notas:",
+    ]
 
-    if "[...]" in cleaned:
-        cleaned = cleaned.replace("[...]", "").strip()
+    for marker in markers:
+        cleaned = cleaned.replace(marker, "")
 
-    if not cleaned:
-        return EMPTY_RESPONSE
+    cleaned = "\n".join(line.strip() for line in cleaned.splitlines() if line.strip())
+    return cleaned.strip()
 
-    if "Respuesta:" not in cleaned:
-        sources = "\n".join(
-            [f"- {item['file_name']} ({item['area']})" for item in contexts]
-        )
-        return f"""Respuesta:
-{cleaned}
+
+def tokenize(text: str):
+    return set(re.findall(r"[a-z0-9_]+", text.lower()))
+
+
+def select_cited_sources(contexts, normalized_answer: str):
+    answer_tokens = tokenize(normalized_answer)
+    cited_sources = []
+
+    for item in contexts:
+        area_token = item["area"].lower()
+        file_tokens = tokenize(item["file_name"].replace(".txt", "").replace("-", "_"))
+        area_hit = area_token in answer_tokens
+        file_hit = bool(file_tokens.intersection(answer_tokens))
+
+        if area_hit or file_hit:
+            cited_sources.append(item)
+
+    if cited_sources:
+        return cited_sources
+
+    return contexts[:1]
+
+
+def estimate_confidence(normalized_answer: str, cited_sources):
+    if normalized_answer == EMPTY_ANSWER:
+        return "Baja"
+
+    if len(cited_sources) == 1:
+        return "Alta"
+
+    return "Media"
+
+
+def build_notes(normalized_answer: str, cited_sources):
+    if normalized_answer == EMPTY_ANSWER:
+        return "No se encontro evidencia suficiente en los documentos disponibles."
+
+    if len(cited_sources) == 1:
+        return "Respuesta basada en una fuente recuperada del corpus local."
+
+    return "Respuesta basada en multiples fragmentos recuperados del corpus local."
+
+
+def format_answer(normalized_answer: str, cited_sources):
+    sources_text = "\n".join(
+        [f"- {item['file_name']} ({item['area']})" for item in cited_sources]
+    )
+    confidence = estimate_confidence(normalized_answer, cited_sources)
+    notes = build_notes(normalized_answer, cited_sources)
+
+    return f"""Respuesta:
+{normalized_answer}
 
 Fuentes:
-{sources}
+{sources_text}
 
 Confianza:
-Media
+{confidence}
 
 Notas:
-Respuesta normalizada por la aplicacion para mostrar el contenido sin plantilla.
-""".strip()
-
-    return cleaned
+{notes}"""
 
 
 def ask_copilot(question: str, role: str):
     contexts = search_documents(question)
 
     if not contexts:
-        return {"answer": EMPTY_RESPONSE, "sources": []}
+        return {
+            "answer": format_answer(EMPTY_ANSWER, [{"file_name": "No aplica", "area": "-"}]),
+            "sources": [],
+        }
 
-    context_text = "\n\n".join(
-        [
-            f"Fuente: {item['file_name']}\nArea: {item['area']}\nContenido:\n{item['text']}"
-            for item in contexts
-        ]
-    )
+    context_text = build_context_text(contexts)
 
     prompt = f"""
 {SYSTEM_PROMPT}
@@ -162,9 +209,17 @@ Contexto disponible:
 
 Pregunta del usuario:
 {question}
-
-Responde usando solo el contexto disponible.
 """
 
-    answer = ask_ollama(prompt)
-    return {"answer": normalize_answer(answer, contexts), "sources": contexts}
+    raw_answer = ask_ollama(prompt)
+    normalized_answer = clean_answer(raw_answer) or EMPTY_ANSWER
+
+    if normalized_answer != EMPTY_ANSWER and normalized_answer.endswith("."):
+        normalized_answer = normalized_answer.strip()
+
+    cited_sources = select_cited_sources(contexts, normalized_answer)
+
+    return {
+        "answer": format_answer(normalized_answer, cited_sources),
+        "sources": contexts,
+    }

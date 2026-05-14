@@ -1,8 +1,8 @@
-Título: Reporte KPI Ventas Q1 2026
-Área: Ventas
+Titulo: Reporte KPI Ventas Q1 2026
+Area: Ventas
 Confidencialidad: Restringido
 
-Durante el Q1 2026, el equipo comercial generó 420 leads, cerró 75 oportunidades y alcanzó una tasa de conversión de 17.8%.
+Durante el Q1 2026, el equipo comercial genero 420 leads, cerro 75 oportunidades y alcanzo una tasa de conversion de 17.8%.
 
 El ticket promedio fue de USD 8,500.
 

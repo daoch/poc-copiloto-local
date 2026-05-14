@@ -82,3 +82,106 @@ Media
 
 Notas:
 Respuesta normalizada por la aplicacion para mostrar el contenido sin plantilla.",31.51
+2026-05-14T22:51:59.323970,general,Cuantos dias de vacaciones corresponden despues de un ano?,"Respuesta:
+Después de un año, los colaboradores con mas de un anno tienen derecho a descansar por 15 días en el marco de las vacaciones anuales.
+
+Fuentes:
+- guia_vpn.txt (ti)
+
+Confianza:
+Alta
+
+Notas:
+Respuesta basada en una fuente recuperada del corpus local.",23.03
+2026-05-14T22:54:12.961428,general,Cuantos dias de vacaciones corresponden despues de un ano?,"Respuesta:
+Después de un año, los colaboradores con mas de un año tienen derecho a 15 días habiles de vacaciones al año.
+
+Fuentes:
+- politica_vacaciones_2026.txt (rrhh)
+
+Confianza:
+Alta
+
+Notas:
+Respuesta basada en una fuente recuperada del corpus local.",2.47
+2026-05-14T22:54:20.293542,general,Cuantos dias de vacaciones corresponden despues de un ano?,"Respuesta:
+Desde hace más de un año, tiene derecho a cinco días de vacaciones al año.
+
+Fuentes:
+- politica_vacaciones_2026.txt (rrhh)
+
+Confianza:
+Alta
+
+Notas:
+Respuesta basada en una fuente recuperada del corpus local.",1.69
+2026-05-14T22:54:28.013478,general,Cuantos dias de vacaciones corresponden despues de un ano?,"Respuesta:
+Después de un año, los colaboradores con mas de un anno tienen derecho a 15 días habiles de vacaciones al año.
+
+Fuentes:
+- politica_vacaciones_2026.txt (rrhh)
+
+Confianza:
+Alta
+
+Notas:
+Respuesta basada en una fuente recuperada del corpus local.",2.54
+2026-05-14T22:54:37.084045,general,Cuantos dias de vacaciones corresponden despues de un ano?,"Respuesta:
+Después de un año, los colaboradores tienen derecho a 15 días habiles de vacaciones al año.
+
+Fuentes:
+- politica_vacaciones_2026.txt (rrhh)
+
+Confianza:
+Alta
+
+Notas:
+Respuesta basada en una fuente recuperada del corpus local.",2.09
+2026-05-14T22:55:00.310698,general,"No puedo conectarme a la VPN, que debo hacer?","Respuesta:
+1. Verificar conexion a internet.
+2. Reiniciar el cliente VPN.
+3. Confirmar que sus credenciales esten vigentes.
+4. Intentar conexion desde otra red.
+5. Si el problema continua, crear ticket a soporte TI.
+
+Fuentes:
+- guia_vpn.txt (ti)
+
+Confianza:
+Alta
+
+Notas:
+Respuesta basada en una fuente recuperada del corpus local.",16.38
+2026-05-14T22:55:29.815097,general,Cuantos dias de vacaciones corresponden despues de un ano?,"Respuesta:
+Dentro de la política establecida, los colaboradores con más de un año en el cargo tienen derecho a solicitar hasta 15 días hábiles de vacaciones al año. Para recibir permiso para estas vacaciones se debe notificar mínimo 15 días antes del período deseado y obtener la aprobación correspondiente del jefe directo y desde el área RRHH.
+
+Fuentes:
+- politica_vacaciones_2026.txt (rrhh)
+
+Confianza:
+Alta
+
+Notas:
+Respuesta basada en una fuente recuperada del corpus local.",20.71
+2026-05-14T22:56:01.856669,general,Resume los KPIs de ventas del Q1 2026.,"Respuesta:
+Tenemos un rendimiento en las ventas con una tasa de conversión del 17.8%, se han cerrado 75 oportunidades y ha habido la generacion de 420 leads, cada ticket promedio es de USD 8,500. La mejora sugerida es reducir el tiempo de respuesta inicial a nuevos leads.
+
+Fuentes:
+- kpi_ventas_q1_2026.txt (ventas)
+
+Confianza:
+Alta
+
+Notas:
+Respuesta basada en una fuente recuperada del corpus local.",20.38
+2026-05-14T22:56:39.317555,general,Cual sera el bono anual del proximo ano?,"Respuesta:
+No encontre evidencia suficiente en los documentos disponibles.
+
+Fuentes:
+- guia_vpn.txt (ti)
+
+Confianza:
+Baja
+
+Notas:
+No se encontro evidencia suficiente en los documentos disponibles.",12.31

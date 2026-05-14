@@ -31,16 +31,16 @@ poc-copiloto-local/
 1. Levantar servicios:
 
 ```powershell
-docker compose up --build
+docker compose up --build -d
 ```
 
-2. Descargar el modelo local por defecto:
+2. Descargar el modelo local por defecto si aun no esta en el volumen:
 
 ```powershell
 docker exec -it poc_ollama ollama pull phi3
 ```
 
-3. Indexar documentos:
+3. Indexar documentos si es la primera corrida, si cambiaste documentos o si reiniciaste la base vectorial:
 
 ```powershell
 docker exec -it poc_copiloto_app python ingest.py
@@ -49,6 +49,15 @@ docker exec -it poc_copiloto_app python ingest.py
 4. Abrir la app:
 
 `http://localhost:8501`
+
+## Orden de ejecucion despues de `docker compose down`
+
+- Si solo hiciste `docker compose down`:
+  `docker compose up -d` -> probar la app
+- Si hiciste `docker compose down` y cambiaste documentos:
+  `docker compose up -d` -> `docker exec -it poc_copiloto_app python ingest.py` -> probar la app
+- Si hiciste `docker compose down` y ademas borraste volumenes:
+  `docker compose up -d` -> `docker exec -it poc_ollama ollama pull phi3` -> `docker exec -it poc_copiloto_app python ingest.py` -> probar la app
 
 ## Cambio opcional de modelo
 
@@ -63,11 +72,11 @@ Luego vuelve a descargar el modelo y reinicia:
 ```powershell
 docker exec -it poc_ollama ollama pull llama3.1:8b
 docker compose down
-docker compose up --build
+docker compose up --build -d
 ```
 
-## Limitación actual
+## Limitacion actual
 
-El rol del usuario solo se inyecta en el prompt. En esta versión no existe filtrado real por permisos en ChromaDB, por lo que la recuperación consulta toda la colección.
+El rol del usuario solo se inyecta en el prompt. En esta version no existe filtrado real por permisos en ChromaDB, por lo que la recuperacion consulta toda la coleccion.
 
-La siguiente iteración debería agregar metadata como `allowed_roles` y aplicar filtros en `collection.query(...)`.
+La siguiente iteracion deberia agregar metadata como `allowed_roles` y aplicar filtros en `collection.query(...)`.
