@@ -233,3 +233,31 @@ Media
 
 Notas:
 Respuesta basada en multiples fragmentos recuperados del corpus local.",72.95
+2026-05-18T17:11:06.913260,general,Cual sera el bono anual del proximo ano?,"Respuesta:
+No encontré suficiente información para responder la pregunta sobre el bono anual del próximo año en los documentos disponibles.
+La Política de descuentos comerciales se enfoca exclusivamente en las condiciones y procedimientos relacionados con ofertas reducidas a nivel comercial, no menciona detalles específicos sobre bonificaciones o sueldos anuales.
+
+Fuentes:
+- politica_descuentos_comerciales.txt (ventas)
+
+Confianza:
+Alta
+
+Notas:
+Respuesta basada en una fuente recuperada del corpus local.",103.31
+2026-05-18T17:13:03.967954,general,"No puedo conectarme a la VPN, que debo hacer?","Respuesta:
+1. Verificar la conexión a internet;
+2. Reiniciar el cliente VPN;
+3. Confirmar las credenciales vigentes;
+4. Intentar la conexion desde otra red si es posible;
+5. Si persiste el problema, crea un ticket para soporte TI.
+
+Fuentes:
+- guia_vpn.txt (ti)
+- politica_gestion_accesos.txt (ti)
+
+Confianza:
+Media
+
+Notas:
+Respuesta basada en multiples fragmentos recuperados del corpus local.",93.74

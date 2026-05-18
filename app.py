@@ -85,6 +85,6 @@ with tab_logs:
         col2.metric("Latencia promedio", round(df["latency"].mean(), 2))
 
         st.subheader("Logs")
-        st.dataframe(df, use_container_width=True)
+        st.dataframe(df, width='stretch')
     else:
         st.info("Todavia no hay logs.")
