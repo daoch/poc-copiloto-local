@@ -1,0 +1,18 @@
+Titulo: Calendario de cierre financiero mensual
+Area: Finanzas
+Version: 1.1
+
+El cierre financiero mensual busca asegurar que ingresos, costos, provisiones y conciliaciones queden registrados de forma oportuna y consistente.
+
+Cronograma objetivo:
+1. Dia habil 1: cierre comercial preliminar y corte de facturacion.
+2. Dia habil 2: conciliacion bancaria y validacion de cobranzas.
+3. Dia habil 3: provisiones, depreciaciones y reclasificaciones.
+4. Dia habil 4: revision gerencial de estados preliminares.
+5. Dia habil 5: cierre final y distribucion de reporte ejecutivo.
+
+Las areas de ventas, operaciones y recursos humanos deben entregar su informacion de soporte dentro de los plazos establecidos para evitar reprocesos.
+
+Cualquier ajuste material posterior al cierre debe documentarse con sustento, aprobacion del responsable financiero y explicacion del impacto.
+
+Finanzas llevara un control de cumplimiento del calendario y de observaciones recurrentes por area para reducir desviaciones en cierres futuros.

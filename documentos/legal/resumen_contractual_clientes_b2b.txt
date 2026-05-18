@@ -1,0 +1,15 @@
+Titulo: Resumen contractual para clientes B2B
+Area: Legal
+Version: 1.0
+
+Los contratos con clientes B2B deben definir claramente objeto, alcance, niveles de servicio, responsabilidades, precios, plazos, terminos de pago y causales de terminacion.
+
+Las propuestas comerciales no reemplazan al contrato salvo que exista aprobacion expresa de legal y de la gerencia responsable.
+
+Toda clausula de penalidad, indemnidad, tratamiento de datos, propiedad intelectual o exclusividad debe ser revisada por legal antes de su firma.
+
+Las renovaciones automaticas, periodos de aviso previo y condiciones de salida deben revisarse con especial cuidado para evitar compromisos no deseados.
+
+Si el cliente solicita condiciones fuera del modelo estandar, el equipo comercial debe enviar el documento a legal con resumen de contexto, riesgos percibidos y fecha objetivo de respuesta.
+
+Legal mantendra un repositorio de plantillas aprobadas y de clausulas frecuentemente negociadas para acelerar la atencion comercial sin perder control contractual.

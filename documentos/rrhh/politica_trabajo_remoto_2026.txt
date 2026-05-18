@@ -1,0 +1,18 @@
+Titulo: Politica de trabajo remoto 2026
+Area: RRHH
+Version: 1.2
+Vigencia: 2026-02-01
+
+La compania permite modalidades de trabajo remoto parcial para puestos elegibles, siempre que se mantengan los niveles esperados de servicio, seguridad y coordinacion con el equipo.
+
+El esquema base para personal administrativo es de hasta 3 dias remotos por semana y 2 dias presenciales, salvo que la naturaleza del puesto requiera mayor presencialidad.
+
+Todo acuerdo de trabajo remoto debe ser aprobado por el jefe directo y registrado por RRHH antes de su inicio. La aprobacion puede revisarse trimestralmente en funcion del desempeno, cambios operativos o necesidades del area.
+
+El colaborador debe garantizar conectividad estable, espacio adecuado para reuniones virtuales y cumplimiento de las normas de confidencialidad de la empresa.
+
+No esta permitido imprimir documentos confidenciales en ubicaciones no autorizadas ni usar equipos personales para almacenar informacion de clientes, planillas salariales o contratos internos.
+
+La empresa proveera acceso remoto, autenticacion corporativa y lineamientos de ciberseguridad. El colaborador es responsable de bloquear su sesion al ausentarse y reportar incidentes de seguridad en un plazo maximo de 30 minutos desde su deteccion.
+
+Las excepciones para trabajo remoto 100 por ciento, cambios temporales por salud o situacion familiar, y acuerdos para colaboradores en provincias deben canalizarse por RRHH con sustento documentario.

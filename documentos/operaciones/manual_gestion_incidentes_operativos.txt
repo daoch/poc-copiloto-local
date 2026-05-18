@@ -1,0 +1,18 @@
+Titulo: Manual de gestion de incidentes operativos
+Area: Operaciones
+Version: 1.0
+
+Se considera incidente operativo a cualquier evento que interrumpa procesos clave, degrade niveles de servicio o genere riesgo relevante para clientes, finanzas o cumplimiento.
+
+Ante un incidente operativo, el responsable del proceso debe:
+1. Confirmar el alcance y el impacto.
+2. Activar al equipo de respuesta.
+3. Registrar hora de inicio y servicios afectados.
+4. Aplicar contencion temporal.
+5. Comunicar estado a las partes interesadas.
+
+Los incidentes se clasifican en critico, alto, medio o bajo segun impacto y urgencia. Un incidente critico requiere comunicacion inicial a gerencia en menos de 30 minutos.
+
+Toda resolucion debe cerrarse con analisis de causa raiz, acciones correctivas, responsable y fecha compromiso.
+
+Operaciones consolidara una bitacora mensual con incidentes, tiempos de atencion y recurrencia para seguimiento de mejora continua.

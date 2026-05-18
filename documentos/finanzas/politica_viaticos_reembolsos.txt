@@ -1,0 +1,20 @@
+Titulo: Politica de viaticos y reembolsos
+Area: Finanzas
+Version: 2.0
+Vigencia: 2026-01-10
+
+Los gastos por viajes, movilidad, alimentacion y representacion deben responder a una necesidad valida de negocio y cumplir los topes definidos por finanzas.
+
+Todo gasto reembolsable requiere comprobante valido, detalle del motivo y aprobacion del jefe directo. Los gastos sin sustento o presentados fuera de plazo podran ser observados o rechazados.
+
+El plazo maximo para rendir gastos es de 5 dias habiles despues de concluida la actividad. Finanzas procesara reembolsos aprobados en un plazo objetivo de 7 dias habiles.
+
+Los topes referenciales son:
+1. Almuerzo local: hasta USD 20 por persona.
+2. Cena local: hasta USD 30 por persona.
+3. Taxi urbano: segun tarifa razonable de mercado.
+4. Hotel nacional: categoria corporativa aprobada.
+
+No son reembolsables los consumos personales, multas, upgrades no autorizados, compras sin relacion con el viaje o gastos presentados en duplicado.
+
+En viajes internacionales, el area solicitante debe coordinar con finanzas el presupuesto estimado y la moneda de rendicion antes del desplazamiento.

@@ -1,0 +1,16 @@
+Titulo: Politica de respaldo y recuperacion
+Area: TI
+Version: 1.0
+Criticidad: Alta
+
+La informacion critica de negocio debe contar con respaldos periodicos, pruebas de restauracion y responsables claramente definidos.
+
+Los sistemas financieros, comerciales y documentales deben respaldarse diariamente. Los repositorios de codigo y configuraciones criticas deben incluir versiones historicas y mecanismos de recuperacion verificables.
+
+Las copias de seguridad deben almacenarse en al menos dos ubicaciones logicas separadas, una de ellas con proteccion ante borrado accidental o malicioso.
+
+TI debe ejecutar pruebas de restauracion completas al menos una vez por trimestre para verificar integridad, tiempos de recuperacion y dependencias tecnicas no documentadas.
+
+Toda restauracion en productivo requiere aprobacion del responsable del servicio y registro del motivo, alcance, fecha y resultado final.
+
+Las fallas de respaldo, los jobs incompletos o los errores de restauracion deben reportarse el mismo dia al responsable de infraestructura para su correccion prioritaria.

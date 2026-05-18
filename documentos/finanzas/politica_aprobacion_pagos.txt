@@ -1,0 +1,19 @@
+Titulo: Politica de aprobacion de pagos
+Area: Finanzas
+Version: 1.0
+Criticidad: Alta
+
+Todo pago a proveedores o terceros debe contar con evidencia de recepcion conforme, sustento documental y aprobaciones segun la matriz vigente.
+
+Las facturas deben validarse contra orden de compra, contrato u otro documento habilitante antes de ingresar al ciclo de pago.
+
+Los niveles de aprobacion son:
+1. Hasta USD 1,000: jefe de area solicitante.
+2. Mas de USD 1,000 y hasta USD 10,000: jefe de area y finanzas.
+3. Mas de USD 10,000: gerencia del area, finanzas y gerencia general segun corresponda.
+
+Los pagos urgentes fuera de calendario deben justificarse por escrito y requieren aprobacion adicional de finanzas.
+
+No se permiten pagos a cuentas no verificadas ni cambios de datos bancarios sin validacion por doble canal.
+
+Finanzas ejecutara una conciliacion semanal entre pagos programados, pagos efectuados y excepciones aprobadas.

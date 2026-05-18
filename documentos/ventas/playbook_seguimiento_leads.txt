@@ -1,0 +1,22 @@
+Titulo: Playbook de seguimiento de leads
+Area: Ventas
+Version: 1.3
+
+El seguimiento de leads debe ser consistente, medible y oportuno para maximizar conversion y calidad de pipeline.
+
+Todo lead nuevo debe registrarse en el CRM con fuente de origen, industria, tamano estimado, responsable comercial y fecha del primer contacto.
+
+El tiempo objetivo de primer contacto es menor a 2 horas habiles para leads inbound de alta intencion y menor a 8 horas habiles para el resto de oportunidades calificadas.
+
+La secuencia recomendada durante los primeros 7 dias es:
+1. Primer correo de contacto.
+2. Llamada de validacion.
+3. Segundo correo con propuesta de valor.
+4. Mensaje por canal alterno si existe consentimiento.
+5. Cierre temporal como no contactado si no hay respuesta.
+
+Un lead se considera calificado cuando confirma necesidad, presupuesto aproximado, horizonte de compra y capacidad de decision o influencia en el proceso.
+
+Ninguna oportunidad debe avanzar a propuesta si no existe descubrimiento minimo documentado. El ejecutivo debe registrar objeciones, competencia identificada y proximos pasos comprometidos.
+
+La gerencia comercial revisara semanalmente la velocidad de contacto, tasa de conversion por fuente y principales motivos de perdida.

@@ -1,0 +1,25 @@
+Titulo: Procedimiento de mesa de ayuda
+Area: TI
+Version: 1.4
+
+La mesa de ayuda centraliza la recepcion, clasificacion, atencion y cierre de incidentes y requerimientos de tecnologia.
+
+Todos los tickets deben registrar usuario solicitante, area, descripcion del problema, impacto, urgencia y evidencia minima como capturas, mensajes de error o sistema afectado.
+
+La clasificacion inicial se realiza en cuatro categorias:
+1. Incidente.
+2. Requerimiento.
+3. Acceso.
+4. Consulta.
+
+Los tiempos objetivo son:
+- Critico: primera respuesta en 15 minutos.
+- Alto: primera respuesta en 1 hora.
+- Medio: primera respuesta en 4 horas.
+- Bajo: primera respuesta en 8 horas habiles.
+
+Si un incidente afecta a mas de un area o compromete un servicio central, debe escalarse inmediatamente al lider de infraestructura y comunicarse por el canal de incidentes.
+
+Ningun ticket debe cerrarse sin validacion del usuario o sin evidencia objetiva de solucion cuando el usuario no este disponible. Los cierres automaticos deben considerar un periodo minimo de espera de 72 horas habiles.
+
+La mesa de ayuda publicara un resumen semanal con volumen de tickets, cumplimiento de SLA y principales causas recurrentes.

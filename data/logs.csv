@@ -185,3 +185,51 @@ Baja
 
 Notas:
 No se encontro evidencia suficiente en los documentos disponibles.",12.31
+2026-05-14T22:58:01.659136,general,Cual sera el bono anual del proximo ano?,"Respuesta:
+No encontre evidencia suficiente en los documentos disponibles.
+
+Fuentes:
+- No aplica (-)
+
+Confianza:
+Baja
+
+Notas:
+No se encontro evidencia suficiente en los documentos disponibles.",1.33
+2026-05-14T23:02:21.811404,general,Que pasa si hay una filtracion de datos de clientes en la darkweb,"Respuesta:
+No encontre evidencia suficiente en los documentos disponibles.
+
+Fuentes:
+- No aplica (-)
+
+Confianza:
+Baja
+
+Notas:
+No se encontro evidencia suficiente en los documentos disponibles.",26.71
+2026-05-14T23:03:12.517720,general,"Que pasa si hay una filtracion de datos de clientes en la darkweb, quien evalua el impacto?","Respuesta:
+No encontré evidencia suficiente en los documentos disponibles para evaluar el impacto.
+
+Fuentes:
+- politica_confidencialidad_informacion.txt (legal)
+
+Confianza:
+Alta
+
+Notas:
+Respuesta basada en una fuente recuperada del corpus local.",23.84
+2026-05-14T23:06:22.560435,general,"Que pasa si hay una filtracion de datos de clientes en la darkweb, quien evalua el impacto?","Respuesta:
+No encontre evidencia suficiente para determinar quién evaluará el impacto de cualquier incidente relacionado con una filtrración de datos. Tal situación requeriría una respuesta compleja que se basa no solo en políticas y procedimientos existentes sino también en la discreción profesional del equipo involucrado. Es recomendable consultar directamente a legal y TI para obtener orientación sobre este asunto específico.
+
+Fuentes:
+- politica_confidencialidad_informacion.txt (legal)
+- resumen_contractual_clientes_b2b.txt (legal)
+- politica_confidencialidad_informacion.txt (legal)
+- lineamientos_proteccion_datos_personales.txt (legal)
+- politica_gestion_accesos.txt (ti)
+
+Confianza:
+Media
+
+Notas:
+Respuesta basada en multiples fragmentos recuperados del corpus local.",72.95

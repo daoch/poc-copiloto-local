@@ -1,0 +1,15 @@
+Titulo: Lineamientos de proteccion de datos personales
+Area: Legal
+Version: 1.3
+
+La empresa debe recolectar, usar, almacenar y eliminar datos personales de acuerdo con la finalidad declarada, la base legal aplicable y los principios de proporcionalidad y seguridad.
+
+Solo deben solicitarse datos estrictamente necesarios para el proceso de negocio correspondiente. Queda prohibida la recoleccion indiscriminada o el uso de datos para fines incompatibles con la finalidad original.
+
+Las solicitudes de acceso, rectificacion, actualizacion o eliminacion de datos deben canalizarse por legal dentro de los plazos internos definidos.
+
+Toda base de datos con informacion personal debe tener responsable identificado, controles de acceso y criterio de retencion documentado.
+
+Si un proveedor procesa datos personales por cuenta de la empresa, el contrato debe incluir clausulas de confidencialidad, seguridad y alcance del tratamiento.
+
+Ante cualquier incidente que comprometa datos personales, legal y TI evaluaran impacto, acciones de contencion y obligaciones de comunicacion aplicables.

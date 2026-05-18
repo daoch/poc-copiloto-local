@@ -1,0 +1,20 @@
+Titulo: Politica de descuentos comerciales
+Area: Ventas
+Version: 2.1
+Confidencialidad: Interno
+
+Los descuentos comerciales deben proteger margen, mantener consistencia de pricing y responder a criterios objetivos.
+
+Todo descuento debe registrarse en la cotizacion y en el CRM indicando motivo, porcentaje, monto afectado y aprobador.
+
+Los rangos de aprobacion son los siguientes:
+- Hasta 5 por ciento: ejecutivo comercial con sustento.
+- Mas de 5 por ciento y hasta 10 por ciento: aprobacion de jefe comercial.
+- Mas de 10 por ciento y hasta 15 por ciento: aprobacion de gerencia comercial.
+- Mas de 15 por ciento: aprobacion conjunta de gerencia comercial y finanzas.
+
+No se permiten descuentos acumulativos fuera de campañas autorizadas. Los beneficios adicionales como meses gratis, implementacion sin costo o ampliacion de licencias deben considerarse equivalentes economicos y aprobarse bajo la misma politica.
+
+Las excepciones por competencia agresiva, renovaciones estrategicas o cuentas clave deben acompañarse con analisis de margen y probabilidad de cierre.
+
+Finanzas auditara mensualmente una muestra de operaciones con descuento para verificar cumplimiento de la politica.

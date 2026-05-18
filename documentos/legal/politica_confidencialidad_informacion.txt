@@ -1,0 +1,16 @@
+Titulo: Politica de confidencialidad de la informacion
+Area: Legal
+Version: 2.2
+Criticidad: Alta
+
+Toda informacion no publica de la empresa, de clientes o de aliados se considera confidencial salvo indicacion expresa en contrario.
+
+Los colaboradores deben usar la informacion confidencial solo para fines laborales autorizados y limitar su acceso a quienes tengan necesidad legitima de conocerla.
+
+Queda prohibido compartir documentos internos por canales personales, reenviar bases de datos a correos externos no autorizados o almacenar contratos, planillas o informacion de clientes en repositorios no aprobados.
+
+Las conversaciones con terceros que involucren precios, contratos, estrategias comerciales, datos personales o incidentes de seguridad deben canalizarse por los responsables autorizados.
+
+Toda perdida de informacion, envio erroneo, acceso no autorizado o sospecha de filtracion debe reportarse inmediatamente a legal y a TI para evaluacion y contencion.
+
+El incumplimiento de esta politica puede generar medidas disciplinarias y, de corresponder, acciones legales adicionales.

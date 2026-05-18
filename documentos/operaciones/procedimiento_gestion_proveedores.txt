@@ -1,0 +1,15 @@
+Titulo: Procedimiento de gestion de proveedores
+Area: Operaciones
+Version: 1.0
+
+La gestion de proveedores busca asegurar continuidad operativa, cumplimiento documental y evaluacion periodica del desempeno.
+
+Antes de contratar un proveedor nuevo, operaciones debe validar razon social, datos bancarios, documentos tributarios, referencias comerciales y aceptacion del codigo de conducta aplicable.
+
+Los proveedores criticos deben someterse a una evaluacion semestral basada en calidad, puntualidad, nivel de servicio, tiempo de respuesta y reincidencia de incidentes.
+
+Toda modificacion de cuenta bancaria debe verificarse por doble canal y documentarse antes de registrar el cambio en los sistemas internos.
+
+Si un proveedor presenta incumplimientos graves o reiterados, operaciones debe activar un plan de accion correctivo o evaluar su reemplazo en coordinacion con el area usuaria.
+
+Los contratos y ordenes vigentes deben mantenerse en un repositorio central accesible para auditoria interna.

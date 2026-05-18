@@ -1,0 +1,20 @@
+Titulo: Proceso de onboarding de colaboradores
+Area: RRHH
+Version: 2.0
+
+El proceso de onboarding inicia una vez aprobada la oferta laboral y recibida la documentacion minima del nuevo ingreso.
+
+RRHH debe coordinar con TI la habilitacion de correo, accesos, VPN, equipos y perfiles de sistemas con al menos 48 horas habiles de anticipacion a la fecha de ingreso.
+
+El jefe directo debe preparar el plan de induccion de la primera semana, incluyendo presentacion del equipo, objetivos de los primeros 30 dias, accesos a repositorios o plataformas criticas y capacitaciones obligatorias.
+
+Durante el primer dia, el colaborador debe recibir:
+1. Bienvenida institucional.
+2. Explicacion de politicas clave.
+3. Firma de formatos pendientes.
+4. Recorrido por herramientas internas.
+5. Agenda de reuniones iniciales.
+
+En la primera quincena se debe validar que los accesos funcionen correctamente, que el colaborador comprenda sus responsabilidades y que exista un punto de contacto para resolver bloqueos operativos.
+
+A los 30 dias, RRHH y el jefe directo deben revisar la experiencia de integracion, detectar riesgos tempranos de desalineamiento y registrar oportunidades de mejora del proceso.

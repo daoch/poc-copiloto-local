@@ -28,20 +28,52 @@ Eres un copiloto empresarial interno para un POC local.
 Reglas:
 1. Responde solamente usando el contexto disponible.
 2. No inventes informacion ni hagas inferencias no explicitadas.
-3. Si el contexto no contiene la respuesta exacta, responde unicamente:
+3. Si el contexto no contiene evidencia suficiente para responder, responde unicamente:
 No encontre evidencia suficiente en los documentos disponibles.
 4. No uses plantillas, corchetes, XML, markdown estructurado ni etiquetas.
 5. Devuelve solo el cuerpo de la respuesta final, en espanol claro y breve.
 """
 
 EMPTY_ANSWER = "No encontre evidencia suficiente en los documentos disponibles."
+STOPWORDS = {
+    "a",
+    "al",
+    "ante",
+    "como",
+    "con",
+    "cual",
+    "cuando",
+    "de",
+    "del",
+    "despues",
+    "donde",
+    "el",
+    "en",
+    "es",
+    "esta",
+    "hay",
+    "la",
+    "las",
+    "lo",
+    "los",
+    "para",
+    "por",
+    "que",
+    "que",
+    "quien",
+    "si",
+    "su",
+    "un",
+    "una",
+    "y",
+}
 
 
 def get_collection():
     return client.get_or_create_collection(name=COLLECTION_NAME)
 
 
-def search_documents(question: str, n_results: int = 4):
+def search_documents(question: str, n_results: int = 8):
     question_embedding = embedding_model.encode([question]).tolist()[0]
 
     try:
@@ -128,7 +160,28 @@ def tokenize(text: str):
     return set(re.findall(r"[a-z0-9_]+", text.lower()))
 
 
+def meaningful_tokens(text: str):
+    return {token for token in tokenize(text) if token not in STOPWORDS and len(token) > 2}
+
+
+def rerank_contexts(question: str, contexts):
+    question_tokens = meaningful_tokens(question)
+
+    def score(item):
+        text_tokens = meaningful_tokens(
+            f"{item['file_name']} {item['area']} {item['text']}"
+        )
+        overlap = len(question_tokens.intersection(text_tokens))
+        distance = item["distance"] if item["distance"] is not None else 999.0
+        return (-overlap, distance)
+
+    return sorted(contexts, key=score)
+
+
 def select_cited_sources(contexts, normalized_answer: str):
+    if normalized_answer == EMPTY_ANSWER:
+        return [{"file_name": "No aplica", "area": "-"}]
+
     answer_tokens = tokenize(normalized_answer)
     cited_sources = []
 
@@ -196,6 +249,7 @@ def ask_copilot(question: str, role: str):
             "sources": [],
         }
 
+    contexts = rerank_contexts(question, contexts)
     context_text = build_context_text(contexts)
 
     prompt = f"""
@@ -213,9 +267,6 @@ Pregunta del usuario:
 
     raw_answer = ask_ollama(prompt)
     normalized_answer = clean_answer(raw_answer) or EMPTY_ANSWER
-
-    if normalized_answer != EMPTY_ANSWER and normalized_answer.endswith("."):
-        normalized_answer = normalized_answer.strip()
 
     cited_sources = select_cited_sources(contexts, normalized_answer)
 

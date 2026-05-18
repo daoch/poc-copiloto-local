@@ -1,0 +1,19 @@
+Titulo: Procedimiento de compras internas
+Area: Operaciones
+Version: 1.1
+
+Para solicitar una compra interna, el colaborador debe:
+
+1. Completar el formulario de solicitud.
+2. Adjuntar la cotizacion del proveedor.
+3. Enviar la solicitud al jefe directo.
+4. Obtener aprobacion de operaciones.
+5. Registrar la orden de compra.
+
+Las solicitudes deben contener justificacion de negocio, presupuesto estimado, centro de costo y fecha requerida de entrega.
+
+Operaciones validara que la documentacion este completa, que exista disponibilidad presupuestal y que el proveedor cumpla las condiciones minimas de registro.
+
+Toda compra urgente debe justificar el motivo de excepcion y contar con aprobacion del responsable del area y de operaciones antes de emitir la orden.
+
+No se procesaran compras con sustento incompleto ni solicitudes presentadas por canales informales sin trazabilidad.

@@ -1,0 +1,18 @@
+Titulo: Politica de gestion de accesos
+Area: TI
+Version: 2.3
+Criticidad: Alta
+
+Todo acceso a sistemas corporativos debe responder al principio de minimo privilegio y a una necesidad valida de negocio.
+
+Las altas de usuario requieren solicitud aprobada por el lider del area usuaria y validacion del propietario funcional del sistema cuando corresponda. Ningun acceso productivo debe otorgarse por pedido informal en chat o correo sin ticket registrado.
+
+Las bajas de acceso de personal cesado deben ejecutarse el mismo dia de la desvinculacion. Para roles criticos, la revocacion debe completarse antes de finalizar la jornada laboral del colaborador.
+
+Las modificaciones de perfil, permisos temporales o accesos excepcionales deben tener fecha de expiracion definida. TI revisara semanalmente los accesos con vigencia temporal para retirar privilegios que ya no correspondan.
+
+Las cuentas compartidas estan prohibidas salvo en servicios tecnicos controlados. Cuando existan cuentas de servicio, deben contar con responsable asignado, rotacion periodica de credenciales y almacenamiento seguro.
+
+El uso de autenticacion multifactor es obligatorio para correo corporativo, VPN, repositorios de codigo, plataformas financieras y paneles administrativos.
+
+TI realizara una recertificacion trimestral de accesos en sistemas criticos junto con los responsables de negocio y dejara evidencia de aprobacion o revocacion.

@@ -1,0 +1,21 @@
+Titulo: Reporte pipeline Q2 2026
+Area: Ventas
+Version: 1.0
+Confidencialidad: Restringido
+
+Al cierre del segundo trimestre de 2026, el pipeline comercial activo alcanzo USD 2.4 millones distribuidos en 138 oportunidades.
+
+El 46 por ciento del pipeline correspondio al segmento mid-market, el 34 por ciento a enterprise y el 20 por ciento a small business.
+
+Las tres industrias con mayor volumen proyectado fueron servicios financieros, retail y educacion privada.
+
+La tasa de avance de oportunidad a propuesta fue de 41 por ciento, mientras que la conversion de propuesta a cierre se situo en 28 por ciento.
+
+El tiempo promedio de ciclo comercial fue de 39 dias para small business, 57 dias para mid-market y 94 dias para enterprise.
+
+Los principales motivos de perdida del trimestre fueron:
+1. Presupuesto insuficiente.
+2. Priorizacion interna del cliente.
+3. Retraso en respuesta del equipo comercial.
+
+La recomendacion principal para el Q3 2026 es reforzar seguimiento de propuestas abiertas de mas de 10 dias y elevar la disciplina de registro de proximos pasos en CRM.
